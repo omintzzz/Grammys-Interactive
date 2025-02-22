@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickity Carousels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+
+    <div class="carousel year-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
+        <div class="carousel-cell" data-year="2023">2023</div>
+        <div class="carousel-cell" data-year="2024">2024</div>
+        <div class="carousel-cell" data-year="2025">2025</div>
+    </div>
+
+    <div class="carousel artist-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
+        <!-- Artist items will be dynamically inserted here -->
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

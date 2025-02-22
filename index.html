@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <header>
-        <h1>And the Winner Is...</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <header>
+    <h1>And the Winner Is...</h1>
+  </header>
 </head>
-    <body>
+
+<body>
 <!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-<!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <img data-flickity-lazyload="dc.jpg" />
+  <!-- Set optional placeholder src -->
+  <img src="dc.jpg" data-flickity-lazyload="dc.jpg" />
 
-<img data-flickity-lazyload="dc.jpg" />
-<!-- Set optional placeholder src -->
-<img src="dc.jpg" data-flickity-lazyload="dc.jpg" />
+  <img data-flickity-lazyload="boston.jpg" />
+  <!-- Set optional placeholder src -->
+  <img src="boston.jpg" data-flickity-lazyload="boston.jpg" />
 
-<img data-flickity-lazyload="boston.jpg" />
-<!-- Set optional placeholder src -->
-<img src="boston.jpg" data-flickity-lazyload="boston.jpg" />
-
-<!-- Flickity HTML init -->
-<div class="artist-carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <div class="artist-carousel"></div>
-  <div class="artist-carousel"></div>
-</div>
-    </body>
-
-<div class="artist-carousel">
-    <div class="artist-carousel">
-      <img class="artist-image"
-        data-flickity-lazyload="dc.jpg" />
-    </div>
-    <div class="artist-carousel">
-        <div class="artist-carousel">
-          <img class="artist-image"
-            data-flickity-lazyload="boston.jpg" />
-        </div>
+  <!-- Flickity HTML init
+  <div class="artist-carousel"
+    data-flickity='{ "wrapAround": true }'>
+    <div class="artist-carousel"></div>
+    <div class="artist-carousel"></div>
   </div>
 
-<div class="year-carousel-container">
-    <!-- carousel for each year-->
-     <div class="carousel" id="year-carousel">
-        div class="carousel-cell">data-year="2025"</div>
-        div class="carousel-cell">data-year="2024"</div>
-        div class="carousel-cell">data-year="2023"</div>
-     </div>
-</div>
+  <div class="artist-carousel">
+      <div class="artist-carousel">
+        <img class="artist-image"
+          data-flickity-lazyload="dc.jpg" />
+      </div>
+      <div class="artist-carousel">
+          <div class="artist-carousel">
+            <img class="artist-image"
+              data-flickity-lazyload="boston.jpg" />
+          </div>
+    </div>
+  -->
+  <!--
+  <div class="year-carousel-container">
+      <div class="carousel" id="year-carousel">
+          <div class="carousel-cell">data-year="2025"</div>
+          <div class="carousel-cell">data-year="2024"</div>
+          <div class="carousel-cell">data-year="2023"</div>
+      </div>
+  </div>
 
-<div class="award-carousel-container">
-    <!-- carousel for artists-->
-     <div class="carousel" id="award-carousel">
-        div class="carousel-cell">data-award="Album of the Year"</div>
-        div class="carousel-cell">data-award="Song of the Year"</div>
-        div class="carousel-cell">data-award="Best New Artist"</div>
-        div class="carousel-cell">data-award="Record of the Year"</div>
-     </div>
-</div>
+  <div class="award-carousel-container">
+      <div class="carousel" id="award-carousel">
+          <div class="carousel-cell">data-award="Album of the Year"</div>
+          <div class="carousel-cell">data-award="Song of the Year"</div>
+          <div class="carousel-cell">data-award="Best New Artist"</div>
+          <div class="carousel-cell">data-award="Record of the Year"</div>
+      </div>
+  </div>
+  -->
+
+  <div class="carousel year-carousel" id="year-carousel" data-flickity='{ "contain": true, "pageDots": false}'>
+    <div class="carousel-cell" data-year="2023">2023</div>
+    <div class="carousel-cell" data-year="2024">2024</div>
+    <div class="carousel-cell" data-year="2025">2025</div>
+  </div>
+
+  <div class="carousel artist-carousel" data-flickity='{ "contain": true, "pageDots": false}'>
+    <!-- artist items here-->
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
 
 </html>
