@@ -88,5 +88,4 @@ categoryCarousel.on('change', function (index) {
     }
 });
 
-
 });
