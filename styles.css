@@ -61,7 +61,7 @@ body {
   transition: background 0.3s;
 }
 
-.yearcarousel-cell.is-selected {
+.year-carousel-cell.is-selected {
   background: #007BFF;
   color: white;
 }
