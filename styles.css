@@ -40,6 +40,13 @@ body {
 .year-carousel {
   width: 80%;
   max-width: 600px;
+  margin: 0 auto;
+}
+
+.category-carousel {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .artist-carousel {
@@ -65,7 +72,6 @@ body {
   background: #007BFF;
   color: white;
 }
-
 
 .category-carousel-cell {
   width: 120px;
