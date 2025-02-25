@@ -110,6 +110,10 @@
         updateArtists(selectedYear);
     });
 
+// create function for showFact
+// create function for showNominees
+
+
 // Initialize the category carousel
 var categoryCarousel = new Flickity('.category-carousel', {
     cellAlign: 'center',
