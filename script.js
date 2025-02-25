@@ -30,20 +30,22 @@ document.addEventListener("DOMContentLoaded", function () {
         updateArtists(selectedYear);
     });
 
-// Initialize the category carousel
+// Initialize the category carousel with arrows
 var categoryCarousel = new Flickity('.category-carousel', {
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    pageDots: false
+    pageDots: false,
+    prevNextButtons: true // Enable arrows
 });
 
-// Initialize the award winners carousel
+// Initialize the award winners carousel with arrows
 var awardCarousel = new Flickity('.award-carousel', {
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    pageDots: false
+    pageDots: false,
+    prevNextButtons: true // Enable arrows
 });
 
 // Award data categorized by type
@@ -87,5 +89,6 @@ categoryCarousel.on('change', function (index) {
         updateAwards(selectedCategory);
     }
 });
+
 
 });
