@@ -109,3 +109,16 @@ body {
   width: 90%;
   max-width: 800px;
 }
+.artist-img {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+
+}
+
+.winner-img {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+
+}

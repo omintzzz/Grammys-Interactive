@@ -6,11 +6,15 @@
     <title>Flickity Carousels</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <h1>And The Winner Is...</h1>
 </head>
 <body>
+    <h1>And The Winner Is...</h1>
 
-
+    <!-- Winner Image Display -->
+    <div class="artist-img">
+        <!-- The image will be dynamically added here by JavaScript -->
+         <img id="winner-image" alt="Winner Image"> <!-- No src initially -->
+    </div>
 
      <!-- YEAR  Carousel -->
     <div class="year-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
@@ -29,16 +33,6 @@
         <div class="category-carousel-cell" data-category="Album of the Year">Album of the Year</div>
     </div>
 
-    <div class="carousel artist-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
-        <!-- Artist items will be dynamically inserted here -->
-    </div>
-
-
-
-<!-- Award Winners Carousel -->
-<div class="award-carousel">
-    <!-- Dynamic award cells will be inserted here -->
-</div>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
