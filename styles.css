@@ -119,13 +119,3 @@ body {
 
 }
 
-.footer {
-  bottom:0px;
-  background-color: goldenrod;
-  text-align: center;
-  font-size: 1rem;
-  padding: 1px;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
