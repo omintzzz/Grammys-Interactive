@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
+    <h1>And The Winner Is...</h1>
 
-    <div class="carousel year-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
-        <div class="carousel-cell" data-year="2023">2023</div>
-        <div class="carousel-cell" data-year="2024">2024</div>
-        <div class="carousel-cell" data-year="2025">2025</div>
+    <br>
+    <br>
+    
+    <!-- Winner Image Display -->
+    <div class="artist-img">
+        <!-- The image will be dynamically added here by JavaScript -->
+         <img id="winner-image" alt="Winner Image"> <!-- No src initially -->
     </div>
 
-    <div class="carousel artist-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
-        <!-- Artist items will be dynamically inserted here -->
+    <br> 
+    <br>
+     
+     <!-- YEAR  Carousel -->
+    <div class="year-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
+        <div class="year-carousel-cell" data-year="2023">2023</div>
+        <div class="year-carousel-cell" data-year="2024">2024</div>
+        <div class="year-carousel-cell" data-year="2025">2025</div>
     </div>
 
-<!-- Award Category Carousel -->
-<div class="category-carousel">
-    <div class="carousel-cell" data-category="Best New Artist">Best New Artist</div>
-    <div class="carousel-cell" data-category="Song of the Year">Song of the Year</div>
-    <div class="carousel-cell" data-category="Record of the Year">Record of the Year</div>
-    <div class="carousel-cell" data-category="Album of the Year">Album of the Year</div>
-</div>
+    <br>
 
-<!-- Award Winners Carousel -->
-<div class="award-carousel">
-    <!-- Dynamic award cells will be inserted here -->
-</div>
+    <!-- AWARD CATEGORIES Carousel -->
+    <div class="category-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
+        <div class="category-carousel-cell" data-category="Best New Artist">Best New Artist</div>
+        <div class="category-carousel-cell" data-category="Song of the Year">Song of the Year</div>
+        <div class="category-carousel-cell" data-category="Record of the Year">Record of the Year</div>
+        <div class="category-carousel-cell" data-category="Album of the Year">Album of the Year</div>
+    </div>
+
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
