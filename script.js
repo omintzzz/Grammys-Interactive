@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     var artistData = {
-        2023: ["Samara Joy", "Artist B", "Artist C"],
-        2024: ["Victoria Monet", "Artist E", "Artist F"],
-        2025: ["Chappell Roan", "Artist H", "Artist I"]
+        // Year: [Best New Artist, SOTY, ROTY, AOTY]
+        2023: ["Samara Joy", "'Just Like That' by Bonnie Raitt", "'About Damn Time' by Lizzo", "Harry's House"],
+        2024: ["Victoria Monet", "'What Was I Made For?' by Billie Eilish", "'Flowers' by Miley Cyrus", "Midnights"],
+        2025: ["Chappell Roan", "'Not Like Us' by Kendrick Lamar", "'Not Like Us' by Kendrick Lamar", "Cowboy Carter"]
     };
 
     var yearCarousel = new Flickity('.year-carousel');
