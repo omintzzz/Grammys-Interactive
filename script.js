@@ -12,8 +12,15 @@ function updateContent() { // updateContent, update image, update audio, update 
         return;
     }
 
+    var otherNoms = document.querySelector('.nominee-content');
+    if (!otherNoms) {
+        console.warn("No element with class 'nominee-content' found.");
+        return;
+    }
+
     imgContainer.innerHTML = ""; // Clear current image
     funfactTEXT = ""; // Clear current pop culture fact
+    nomineeTEXT = ""; // Clear current nominee content
 
     var selectedYearElement = document.querySelector('.year-carousel .is-selected');
     if (!selectedYearElement) {
@@ -40,47 +47,51 @@ function updateContent() { // updateContent, update image, update audio, update 
     if (year == 2023 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_SAMARA.png";
         funfactTEXT = "Samara Joy also won Best Jazz Vocal Album for 'Linger Awhile.'";
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2023 && category === "Song of the Year") {
         img.src = "grammy_winners/RTY_BONNIE.png";
         funfactTEXT = "'Just Like That' also won the Grammy for Best American Roots Song.";
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2023 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_LIZZO.png";
         funfactTEXT = "There was a dance trend on Tik Tok to 'About Damn Time.'";
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2023 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_HARRY.png";
-        //document.getElementById("FUNFACT").innerHTML =
         funfactTEXT = "For the 2023 Grammy Awards, Harry Styles' hit song 'As It Was' received four nominations including Record Of The Year, Best Music Video, Best Pop Solo Performance, and Song Of The Year.";
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2024 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_VICTORIA.png";
-        funfactTEXT = "'Victoria Monet was also nominated for Record Of The Year and Best R&B Song for her hit ‘On My Mama’,  Best Traditional R&B Performance, and Best R&B Performance.";
+        funfactTEXT = "'Victoria Monet was also nominated for Record Of The Year and Best R&B Song for her hit 'On My Mama',  Best Traditional R&B Performance, and Best R&B Performance.";
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2024 && category === "Song of the Year") {
         img.src = "grammy_winners/STY_BILLIE.png";
         funfactTEXT = "'What Was I Made For?' was famously included in the soundtrack of Barbie (2023).";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2024 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_MILEY.png";
         funfactTEXT = "TKTKTKTKTKKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTK";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2024 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_TAYLOR.png";
         funfactTEXT = "This was the fourth Album of the Year award Taylor Swift has won.";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2025 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_CHAPPELL.png";
         funfactTEXT = "Chappell Roan was nominated for five other Grammy awards including Best Pop Vocal Album and Album of the Year for 'The Rise And Fall Of A Midwest Princess' in addition to Song Of The Year, Record of the Year, and Best Pop Solo Performance for her hit song 'Good Luck Babe.'";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2025 && category === "Song of the Year") {
         img.src = "grammy_winners/STY_KENDRICK.png";
         funfactTEXT = "This iconic diss track toward Drake won five Grammy awards this year, which is the same number of Grammys Drake has in total.";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2025 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_KENDRICK.png";
         funfactTEXT = "This iconic diss track toward Drake won five Grammy awards this year, which is the same number of Grammys Drake has in total.";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else if (year == 2025 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_BEYONCE.png";
         funfactTEXT = "Throughout her extensive music career, Beyonce has finally won Album of the Year after being nominated four times previously. She is the first Black woman in the 21st century to win this award.";
-
+        nomineeTEXT = "Anitta Omar Apollo DOMi & JD Beck Muni Long Latto Måneskin Tobe Nwigwe Molly Tuttle Wet Leg";
     } else {
         console.warn("No content found for selected year and category.");
         return;
@@ -88,6 +99,7 @@ function updateContent() { // updateContent, update image, update audio, update 
 
     imgContainer.appendChild(img);
     popFact.innerHTML = funfactTEXT;
+    otherNoms.innerHTML = nomineeTEXT;
 }
 
 
