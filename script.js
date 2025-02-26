@@ -1,17 +1,5 @@
-///document.addEventListener("DOMContentLoaded", function () {
-    ///var artistData = {
-        // Year: [Best New Artist, SOTY, ROTY, AOTY]
-        ///2023: ["Samara Joy", "'Just Like That' by Bonnie Raitt", "'About Damn Time' by Lizzo", "Harry's House"],
-       /// 2024: ["Victoria Monet", "'What Was I Made For?' by Billie Eilish", "'Flowers' by Miley Cyrus", "Midnights"],
-       /// 2025: ["Chappell Roan", "'Not Like Us' by Kendrick Lamar", "'Not Like Us' by Kendrick Lamar", "Cowboy Carter"]
-   /// };
 
-    ///var yearCarousel = new Flickity('.year-carousel');
-   /// var categoryCarousel = new Flickity('.category-carousel');
-    ///var artistCarousel = new Flickity('.artist-carousel');
-
-// Function to show the artist image
-function showArtistIMG() { // updateContent, update image, update audio, update caption
+function updateContent() { // updateContent, update image, update audio, update caption
     var imgContainer = document.querySelector('.artist-img');
     if (!imgContainer) {
         console.warn("No element with class 'artist-img' found.");
@@ -82,11 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var categoryCarousel = new Flickity('.category-carousel');
 
     // Attach event listeners to update image on selection change
-    yearCarousel.on('change', showArtistIMG);
-    categoryCarousel.on('change', showArtistIMG);
+    yearCarousel.on('change', updateContent);
+    categoryCarousel.on('change', updateContent);
 
     // Call function initially to ensure image is displayed when page loads
-    setTimeout(showArtistIMG, 500); // Delay to ensure Flickity is fully initialized
+    setTimeout(updateContent, 500); // Delay to ensure Flickity is fully initialized
 
     // Other functions for the artist and award carousels...
 });
@@ -121,49 +109,7 @@ var categoryCarousel = new Flickity('.category-carousel', {
     pageDots: false
 });
 
-// Update Culture and Nominee Information
-function updateContent() {
-    var selectedYearElement = document.querySelector('.year-carousel .is-selected');
-    if (!selectedYearElement) {
-        selectedYearElement = document.querySelector('.year-carousel-cell'); // Default to first
-    }
 
-    var selectedCategoryElement = document.querySelector('.category-carousel .is-selected') 
-        || document.querySelector('.category-carousel-cell'); // Default to first
-
-    if (!selectedYearElement || !selectedCategoryElement) {
-        console.warn("Year or category not selected");
-        return;
-    }
-
-    var year = selectedYearElement.getAttribute("data-year");
-    var category = selectedCategoryElement.getAttribute("data-category");
-    
-    console.log(`Updating Content: Year - ${year}, Category - ${category}`);
-    
-    // Hide all content first
-    document.querySelectorAll('.culture-content, .nominee-content').forEach(div => div.style.display = "none");
-    
-    // Construct the ID based on selected year and category
-    const contentId = `${year} ${category}`;
-    /*
-    // Update culture content
-    var cultureDiv = d3.select(`#${CSS.escape(contentId)}.culture-content`);
-    if (!cultureDiv.empty()) {
-        cultureDiv.style("display", "block");
-    } else {
-        console.warn(`No culture-content found for ${contentId}`);
-    }
-
-    // Show nominee content if it exists
-    var nomineeDiv = d3.select(`#${CSS.escape(contentId)}.nominee-content`);
-    if (!nomineeDiv.empty()) {
-        nomineeDiv.style("display", "block");
-    } else {
-        console.warn(`No nominee-content found for ${contentId}`);
-    }
-    */
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     var yearCarousel = new Flickity('.year-carousel');
