@@ -113,10 +113,6 @@ yearCarousel.on('change', function (index) {
     updateArtists(selectedYear);
 });
 
-// create function for showFact
-// create function for showNominees
-
-
 // Initialize the category carousel
 var categoryCarousel = new Flickity('.category-carousel', {
     cellAlign: 'center',
@@ -124,3 +120,59 @@ var categoryCarousel = new Flickity('.category-carousel', {
     wrapAround: true,
     pageDots: false
 });
+
+// Update Culture and Nominee Information
+function updateContent() {
+    var selectedYearElement = document.querySelector('.year-carousel .is-selected');
+    if (!selectedYearElement) {
+        selectedYearElement = document.querySelector('.year-carousel-cell'); // Default to first
+    }
+
+    var selectedCategoryElement = document.querySelector('.category-carousel .is-selected') 
+        || document.querySelector('.category-carousel-cell'); // Default to first
+
+    if (!selectedYearElement || !selectedCategoryElement) {
+        console.warn("Year or category not selected");
+        return;
+    }
+
+    var year = selectedYearElement.getAttribute("data-year");
+    var category = selectedCategoryElement.getAttribute("data-category");
+    
+    console.log(`Updating Content: Year - ${year}, Category - ${category}`);
+    
+    // Hide all content first
+    document.querySelectorAll('.culture-content, .nominee-content').forEach(div => div.style.display = "none");
+    
+    // Construct the ID based on selected year and category
+    const contentId = `${year} ${category}`;
+    /*
+    // Update culture content
+    var cultureDiv = d3.select(`#${CSS.escape(contentId)}.culture-content`);
+    if (!cultureDiv.empty()) {
+        cultureDiv.style("display", "block");
+    } else {
+        console.warn(`No culture-content found for ${contentId}`);
+    }
+
+    // Show nominee content if it exists
+    var nomineeDiv = d3.select(`#${CSS.escape(contentId)}.nominee-content`);
+    if (!nomineeDiv.empty()) {
+        nomineeDiv.style("display", "block");
+    } else {
+        console.warn(`No nominee-content found for ${contentId}`);
+    }
+    */
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var yearCarousel = new Flickity('.year-carousel');
+    var categoryCarousel = new Flickity('.category-carousel');
+
+    yearCarousel.on('change', updateContent);
+    categoryCarousel.on('change', updateContent);
+
+    setTimeout(updateContent, 500);
+});
+
+// end culture nominee info function
