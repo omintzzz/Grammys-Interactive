@@ -73,7 +73,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["A&W (Lana Del Rey)", "Anti-Hero (Taylor Swift)", "Butterfly (Jon Batiste)", "Dance The Night (Dua Lipa)", "Flowers (Miley Cyrus)", "Kill Bill (SZA)", "Vampire (Olivia Rodrigo)"];
     } else if (year == 2024 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_MILEY.png";
-        funfactTEXT = "TKTKTKTKTKKTKTKTKTKTKTKTKTKTKTKTKTKTKTKTK";
+        funfactTEXT = "This was Miley Cyrus' first Grammy win despite being in the industry as a child star.";
         nomineeTEXT = ["Worship (Jon Batiste)", "Not Strong Enough (boygenius)", "What Was I Made For? (Billie Eilish)", "On My Mama (Victoria Monét)", "Vampire (Olivia Rodrigo)", "Anti-Hero (Taylor Swift)", "Kill Bill (SZA)"];
     } else if (year == 2024 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_TAYLOR.png";
