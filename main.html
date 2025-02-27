@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flickity Carousels</title>
+    <title>Recent Grammy Award Winners</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
+<main>
     <h1>And The Winner Is...</h1>
     <br>
     <!-- Winner Image Display -->
+     
     <div class="artist-img">
-        <!-- The image will be dynamically added here by JavaScript -->
-         <img id="winner-image" alt="Winner Image"> <!-- No src initially -->
     </div>
+
+    <div class="popup ishidden">brobro</div>
+       
 
     <br> 
     <br>
      
-     <!-- YEAR  Carousel -->
-    <div class="year-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
-        <div class="year-carousel-cell" data-year="2023">2023</div>
-        <div class="year-carousel-cell" data-year="2024">2024</div>
-        <div class="year-carousel-cell" data-year="2025">2025</div>
-    </div>
 
-    <br>
 
     <!-- AWARD CATEGORIES Carousel -->
     <div class="category-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
@@ -35,10 +31,60 @@
         <div class="category-carousel-cell" data-category="Record of the Year">Record of the Year</div>
         <div class="category-carousel-cell" data-category="Album of the Year">Album of the Year</div>
     </div>
+    
+    <br>
+
+    <!-- YEAR  Carousel -->
+     <div class="year-carousel" data-flickity='{ "contain": true, "pageDots": false }'>
+        <div class="year-carousel-cell" data-year="2025">2025</div>
+        <div class="year-carousel-cell" data-year="2024">2024</div>
+        <div class="year-carousel-cell" data-year="2023">2023</div>
+    </div>
+    
+        <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="row">
+
+        <div class="column">
+            <b>CONTEXT IN POP CULTURE <br></b>
+            <br>
+            <div class="pop-culture-fact">
+                <p id="FUNFACT"></p>
+           </div>
+
+        </div>
 
 
+        <div class="column">
+            <b>THE OTHER NOMINEES</b>
+
+            <div class="nominee-content">
+                <p id="NOMINEES"></p>
+           </div>
+
+        </div>
+
+    </div>
+
+
+    
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="script.js"></script>
+</main>
+
+<br>
+<br>
+<br>
+
+<footer>Interactive Story by Sharon Chen, Olivia Mintz, and Sean Ayoub.</footer>
 
 </body>
+
+
 </html>
