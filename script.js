@@ -4,7 +4,6 @@ function formatNomineesAsList(nomineeArray) {
 
 function updateContent() { // updateContent, update image, update audio, update caption
     var imgContainer = document.querySelector('.artist-img');
-    
     var audioContainer = document.querySelector('.audio-container');
 
     if (!imgContainer || !audioContainer) {
@@ -65,11 +64,9 @@ function updateContent() { // updateContent, update image, update audio, update 
     console.log(`Selected Year: ${year}, Selected Category: ${category}`);
 
 
-
-
     var img = document.createElement("img");
 
-
+    
     // Create the play and pause buttons as <button> elements
     var playButton = document.createElement("button");
     playButton.innerText = "Play";
@@ -183,7 +180,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     imgContainer.appendChild(img);
     popFact.innerHTML = funfactTEXT;
     otherNoms.innerHTML = formatNomineesAsList(nomineeTEXT);
-    POPUP.innerHTML = popupTEXT;
+    // POPUP.innerHTML = popupTEXT;
     
     audio.appendChild(source);
     audio.controls = true;
@@ -201,26 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Call function initially to ensure image is displayed when page loads
     setTimeout(updateContent, 500); // Delay to ensure Flickity is fully initialized
-
-    // Other functions for the artist and award carousels...
 });
-
-function updateArtists(year) {
-    var artistContainer = document.querySelector('.artist-carousel');
-    artistContainer.innerHTML = ""; // Clear current artists
-
-    artistData[year].forEach(function (artist) {
-        var cell = document.createElement("div");
-        cell.classList.add("carousel-cell");
-        cell.textContent = artist;
-        artistContainer.appendChild(cell);
-    });
-
-    artistCarousel.reloadCells(); // Refresh Flickity
-}
-
-// Initial load
-updateArtists(2023);
 
 yearCarousel.on('change', function (index) {
     var selectedYear = document.querySelector('.year-carousel .is-selected').dataset.year;
@@ -236,54 +214,4 @@ var categoryCarousel = new Flickity('.category-carousel', {
     prevNextButtons: true // Enable arrows
 });
 
-// Initialize the award winners carousel with arrows
-var awardCarousel = new Flickity('.award-carousel', {
-    cellAlign: 'center',
-    contain: true,
-    wrapAround: true,
-    pageDots: false,
-    prevNextButtons: true // Enable arrows
-});
-
-// Award data categorized by type
-var awardData = {
-    "Best New Artist": ["Samara Joy", "Artist B", "Artist C"],
-    "Song of the Year": ["Song A", "Song B", "Song C"],
-    "Record of the Year": ["Record X", "Record Y", "Record Z"],
-    "Album of the Year": ["Album 1", "Album 2", "Album 3"]
-};
-
-// Function to update awards based on the selected category
-function updateAwards(category) {
-    var awardContainer = document.querySelector('.award-carousel');
-    awardContainer.innerHTML = ""; // Clear current awards
-
-    if (awardData[category]) {
-        awardData[category].forEach(function (award) {
-            var cell = document.createElement("div");
-            cell.classList.add("carousel-cell");
-            cell.textContent = award;
-            awardContainer.appendChild(cell);
-        });
-
-        // Refresh Flickity to recognize new cells
-        awardCarousel.reloadCells();
-        awardCarousel.select(0); // Reset to first cell
-    } else {
-        console.warn(`No awards found for category: ${category}`);
-    }
-}
-
-// Initial load for Best New Artist
-updateAwards("Best New Artist");
-
-// Event listener for category changes
-categoryCarousel.on('change', function (index) {
-    var selectedCell = document.querySelector('.category-carousel .carousel-cell.is-selected');
-    var selectedCategory = selectedCell?.dataset.category;
-
-    if (selectedCategory) {
-        updateAwards(selectedCategory);
-    }
-});
 
