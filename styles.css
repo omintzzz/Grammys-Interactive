@@ -147,3 +147,17 @@ footer {
   padding: 10px;
   box-sizing: border-box;
 }
+
+/* Audio Player Styling */
+
+.audio-container {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.audio-container audio {
+  width: 100%;
+  max-width: 500px;
+}
+
