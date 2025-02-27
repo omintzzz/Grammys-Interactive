@@ -186,6 +186,12 @@ function updateContent() { // updateContent, update image, update audio, update 
     audio.controls = true;
     audioContainer.appendChild(audio);
 
+    if (category === "Song of the Year" || category === "Record of the Year") {
+        audioContainer.style.visibility = "visible";
+    } else {
+        audioContainer.style.visibility = "hidden";
+    }
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
