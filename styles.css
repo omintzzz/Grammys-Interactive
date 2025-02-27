@@ -3,7 +3,13 @@ body {
   text-align: center;
   padding: 0px;
   background: #f5f5f5;
+
+  background-image: url('grammybg.png'); /* Set the background image */
+  background-repeat: repeat-y; /* Repeat vertically */
+  background-size: 100% auto; /* Image width fits screen, height auto */
+  background-position: top center; /* Align image at top center */
 }
+
 body, html {
   height: 100%;
   margin: 0;
@@ -15,6 +21,13 @@ main {
   flex: 1; 
   padding: 20px;
 }
+
+h1 {
+  background: white;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .carousel {
   background: white;
   margin: 20px auto;
@@ -152,7 +165,7 @@ footer {
 
 .audio-container {
   max-height: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
   position: relative;
 }
