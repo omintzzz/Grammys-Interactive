@@ -202,6 +202,22 @@ document.addEventListener("DOMContentLoaded", function () {
     yearCarousel.on('change', updateContent);
     categoryCarousel.on('change', updateContent);
 
+    //Make carousel cells clickable
+    document.querySelectorAll('.year-carousel-cell').forEach(cell => {
+        cell.addEventListener('click', function () {
+            yearCarousel.selectCell(cell); // Move carousel to this cell
+            updateContent(); // Update content after selection
+        });
+    });
+
+    document.querySelectorAll('.category-carousel-cell').forEach(cell => {
+        cell.addEventListener('click', function () {
+            categoryCarousel.selectCell(cell); // Move carousel to this cell
+            updateContent(); // Update content after selection
+        });
+    });
+
+
     // Call function initially to ensure image is displayed when page loads
     setTimeout(updateContent, 500); // Delay to ensure Flickity is fully initialized
 });

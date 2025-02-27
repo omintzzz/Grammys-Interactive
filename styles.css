@@ -8,6 +8,7 @@ body {
   background-repeat: repeat-y; /* Repeat vertically */
   background-size: 100% auto; /* Image width fits screen, height auto */
   background-position: top center; /* Align image at top center */
+  background-attachment: fixed; /* Fixed background */
 }
 
 body, html {
@@ -31,23 +32,27 @@ h1 {
 .carousel {
   background: white;
   margin: 20px auto;
+  position: relative
 }
 
 .year-carousel {
   width: 80%;
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
 }
 
 .category-carousel {
   width: 80%;
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
 }
 
 .artist-carousel {
   width: 90%;
   max-width: 800px;
+  position: relative;
 }
 
 .year-carousel-cell {
@@ -62,11 +67,13 @@ h1 {
   cursor: pointer;
   border-radius: 10px;
   transition: background 0.3s;
+  position: relative;
 }
 
 .year-carousel-cell.is-selected {
   background: #007BFF;
   color: white;
+  position: relative;
 }
 
 .category-carousel-cell {
@@ -81,6 +88,7 @@ h1 {
   cursor: pointer;
   border-radius: 10px;
   transition: background 0.3s;
+  position: relative;
 }
 
 .category-carousel-cell.is-selected {
@@ -105,6 +113,7 @@ h1 {
   width: 500px;
   height: 500px;
   margin: 0 auto;
+  position: relative;
 
 }
 
@@ -112,6 +121,7 @@ h1 {
   width: 500px;
   height: 500px;
   margin: 0 auto;
+  position: relative;
 
 }
 
@@ -146,10 +156,12 @@ h1 {
 .pop-culture-fact {
   text-align: left;
   margin-right: 120px;
+  position: relative;
 }
 
 .nominee-content {
   text-align: left;
+  position: relative;
 }
 
 footer {
