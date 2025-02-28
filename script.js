@@ -104,7 +104,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     if (year == 2023 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_SAMARA.png";
         img.alt = "Best New Artist 2023 Winner - Samara Joy";
-        funfactTEXT = "Samara Joy also won Best Jazz Vocal Album for 'Linger Awhile.'";
+        funfactTEXT = "Samara Joy is the third jazz artist to win the Grammy for Best New Artist.";
         nomineeTEXT = ["Anitta", "Omar Apollo", "DOMi & JD Beck", "Muni Long", "Latto", "Måneskin", "Tobe Nwigwe", "Molly Tuttle", "Wet Leg"];
         POPUP.innerHTML = "This is Samara Joy's <b>1st</b> grammy";
         aboutTEXT = "Samara Joy is an American jazz singer.";
@@ -138,7 +138,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     } else if (year == 2024 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_VICTORIA.png";
         img.alt = "Best New Artist 2024 Winner - Victoria Monet";
-        funfactTEXT = "'Victoria Monet was also nominated for Record Of The Year and Best R&B Song for her hit 'On My Mama',  Best Traditional R&B Performance, and Best R&B Performance.";
+        funfactTEXT = "Despite writing songs for many artists including Ariana Grande, Fifth Harmony, and many others, 2024 was the by far the biggest Grammy year for Victoria Monet as she received 2 other Grammys and 4 other nominations that night. My roots have been growing underneath ground, unseen, for so long, and I feel like today I'm sprouting, finally above ground, she said during her acceptance speech.";
         nomineeTEXT = ["Gracie Abrams", "Fred again..", "Ice Spice", "Jelly Roll", "Coco Jones", "Noah Kahan", "The War And Treaty"];
         POPUP.innerHTML = "This was Victoria Monet's <b>1st</b> grammy";
         aboutTEXT = "Victoria Monet is an American R&B singer and songwriter.";
@@ -155,7 +155,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     } else if (year == 2024 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_MILEY.png";
         img.alt = "Record of the Year 2024 Winner - Miley Cyrus";
-        funfactTEXT = "This was Miley Cyrus' first Grammy win despite being in the industry as a child star.";
+        funfactTEXT = "This was Miley Cyrus' first Grammy win despite being in the industry as a child star. 'This award is amazing, but I really hope it doesn't change anything, because my life was beautiful yesterday,' Cyrus said during her acceptance speech.";
         nomineeTEXT = ["Worship (Jon Batiste)", "Not Strong Enough (boygenius)", "What Was I Made For? (Billie Eilish)", "On My Mama (Victoria Monét)", "Vampire (Olivia Rodrigo)", "Anti-Hero (Taylor Swift)", "Kill Bill (SZA)"];
         POPUP.innerHTML = "This was Miley Cyrus' <b>1st</b> grammy";
         source.src = "grammy mp3/Miley Cyrus - Flowers (Lyrics).mp3";
@@ -164,7 +164,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     } else if (year == 2024 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_TAYLOR.png";
         img.alt = "Album of the Year 2024 Winner - Taylor Swift";
-        funfactTEXT = "This was the fourth Album of the Year award Taylor Swift has won.";
+        funfactTEXT = "This was the fourth Album of the Year award Taylor Swift has won, which is the most an artist has won this award. This was a lucky night for Swift as it was her 13th Grammy win and 13 is her lucky number.";
         nomineeTEXT = ["World Music Radio (Jon Batiste)", "the record (boygenius)", "Endless Summer Vacation (Miley Cyrus)", "Did You Know That There’s A Tunnel Under Ocean Blvd (Lana Del Rey)", "The Age Of Pleasure (Janelle Monáe)", "Guts (Olivia Rodrigo)", "SOS (SZA)"];
         POPUP.innerHTML = "This was Taylor Swift's <b>13th</b> grammy";
         aboutTEXT = "Taylor Swift is an American singer-songwriter.";
@@ -180,7 +180,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     } else if (year == 2025 && category === "Song of the Year") {
         img.src = "grammy_winners/STY_KENDRICK.png";
         img.alt = "Song of the Year 2025 Winner - Kendrick Lamar";
-        funfactTEXT = "This iconic diss track toward Drake won five Grammy awards this year, which is the same number of Grammys Drake has in total.";
+        funfactTEXT = "This iconic diss track toward Drake won five Grammy awards this year, which is the same number of Grammys Drake has in total. This also left him the most decorated winner this year.'[The recognition] is what it’s about because, at the end of the day, nothing is more powerful than rap music. I don’t care what it is. We are the culture that’s always going to stay here and live forever.'";
         nomineeTEXT = ["A Bar Song (Tipsy) (Shaboozey)", "Birds of a Feather (Billie Eilish)", "Die With a Smile (Lady Gaga & Bruno Mars)", "Fortnight (Taylor Swift Featuring Post Malone)", "Good Luck, Babe! (Chappell Roan)", "Please Please Please (Sabrina Carpenter)", "Texas Hold 'Em (Beyoncé)"];
         POPUP.innerHTML = "This was Kendrick Lamar's <b>19th</b> grammy";
         source.src = "grammy mp3/Not Like Us.mp3";
@@ -189,7 +189,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     } else if (year == 2025 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_KENDRICK.png";
         img.alt = "Record of the Year 2025 Winner - Kendrick Lamar";
-        funfactTEXT = "This iconic diss track toward Drake won five Grammy awards this year, which is the same number of Grammys Drake has in total.";
+        funfactTEXT = "This iconic diss track toward Drake won five Grammy awards this year, which is the same number of Grammys Drake has in total. This also left him the most decorated winner this year.'[The recognition] is what it’s about because, at the end of the day, nothing is more powerful than rap music. I don’t care what it is. We are the culture that’s always going to stay here and live forever.'";
         nomineeTEXT = ["Now and Then (The Beatles)", "Texas Hold 'Em (Beyoncé)", "Espresso (Sabrina Carpenter)", "360 (Charli xcx)", "Birds of a Feather (Billie Eilish)", "Good Luck, Babe! (Chappell Roan)", "Fortnight (Taylor Swift Featuring Post Malone)"];
         POPUP.innerHTML = "This was Kendrick Lamar's <b>18th</b> grammy";
         source.src = "grammy mp3/Not Like Us.mp3";
@@ -198,7 +198,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     } else if (year == 2025 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_BEYONCE.png";
         img.alt = "Album of the Year 2025 Winner - Beyoncé";
-        funfactTEXT = "Throughout her extensive music career, Beyonce has finally won Album of the Year after being nominated four times previously. She is the first Black woman in the 21st century to win this award.";
+        funfactTEXT = "Throughout her extensive music career, Beyonce has finally won Album of the Year after being nominated four times previously. She is the first Black woman in the 21st century to win this award. She also became the first Black artist to win Best Country Album for Cowboy Carter. She now has 33 Grammys.";
         nomineeTEXT = ["New Blue Sun (André 3000)", "Short n’ Sweet (Sabrina Carpenter)", "Brat (Charli xcx)", "Djesse Vol. 4 (Jacob Collier)", "Hit Me Hard and Soft (Billie Eilish)", "The Rise And Fall Of A Midwest Princess (Chappell Roan)", "The Tortured Poets Department (Taylor Swift)"];
         POPUP.innerHTML = "This was Beyoncé's <b>33rd</b> grammy";
         aboutTEXT = "Beyoncé is an American singer, songwriter, and actress.";
