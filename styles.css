@@ -102,11 +102,13 @@ h1 {
   height: 100px;
   background: #eee;
   font-size: 16px;
+  position: relative;
 }
 
 .category-carousel {
   width: 90%;
   max-width: 800px;
+  position: relative;
 }
 
 .artist-img {
@@ -194,5 +196,6 @@ footer {
 .audio-container audio {
   width: 100%;
   max-width: 500px;
+  position: relative;
 }
 
