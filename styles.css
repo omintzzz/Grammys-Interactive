@@ -205,10 +205,12 @@ footer {
   /* Main content should still be centered */
   main {
     padding: 10px;
+    text-align: center;
   }
 
   h1 {
     font-size: 20px;
+    text-align: center;
   }
 
   footer {
@@ -234,10 +236,12 @@ footer {
   /* Further adjust for very small screens */
   main {
     padding: 5px;
+    text-align: center;
   }
 
   h1 {
     font-size: 18px;
+    text-align: center;
   }
 
   footer {
