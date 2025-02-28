@@ -153,6 +153,12 @@ h1 {
  .ishidden{
   visibility: hidden
  }
+
+.about-the-artist{
+  text-align: left;
+  position: relative;
+}
+
 .pop-culture-fact {
   text-align: left;
   margin-right: 120px;

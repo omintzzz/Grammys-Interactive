@@ -40,10 +40,18 @@ function updateContent() { // updateContent, update image, update audio, update 
         return;
     }
 
+    var aboutArtist = document.querySelector('.about-the-artist');
+    if (!aboutArtist) {
+        console.warn("No element with class 'about-the-artist' found.");
+        return;
+    }
+
     imgContainer.innerHTML = ""; // Clear current image
     funfactTEXT = ""; // Clear current pop culture fact
     nomineeTEXT = []; // Clear current nominee content
     audioContainer.innerHTML = ""; // Clear current audio
+    aboutTEXT = ""; // Clear current about artist
+
 
     var selectedYearElement = document.querySelector('.year-carousel .is-selected');
     if (!selectedYearElement) {
@@ -66,7 +74,6 @@ function updateContent() { // updateContent, update image, update audio, update 
 
     var img = document.createElement("img");
 
-    
     // Create the play and pause buttons as <button> elements
     var playButton = document.createElement("button");
     playButton.innerText = "Play";
@@ -91,6 +98,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     var funfactTEXT = "";
     var nomineeTEXT = [];
     var popupTEXT = "";
+    var aboutTEXT = "";
 
     // ** Image selection using if statements ** EACH OF THESE IFS change innter html of caption, change audio source and img
     if (year == 2023 && category === "Best New Artist") {
@@ -99,6 +107,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         funfactTEXT = "Samara Joy also won Best Jazz Vocal Album for 'Linger Awhile.'";
         nomineeTEXT = ["Anitta", "Omar Apollo", "DOMi & JD Beck", "Muni Long", "Latto", "Måneskin", "Tobe Nwigwe", "Molly Tuttle", "Wet Leg"];
         POPUP.innerHTML = "This is Samara Joy's <b>1st</b> grammy";
+        aboutTEXT = "Samara Joy is an American jazz singer.";
 
     } else if (year == 2023 && category === "Song of the Year") {
         img.src = "grammy_winners/RTY_BONNIE.png";
@@ -129,6 +138,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         funfactTEXT = "'Victoria Monet was also nominated for Record Of The Year and Best R&B Song for her hit 'On My Mama',  Best Traditional R&B Performance, and Best R&B Performance.";
         nomineeTEXT = ["Gracie Abrams", "Fred again..", "Ice Spice", "Jelly Roll", "Coco Jones", "Noah Kahan", "The War And Treaty"];
         POPUP.innerHTML = "This was Victoria Monet's <b>1st</b> grammy";
+        aboutTEXT = "Victoria Monet is an American R&B singer and songwriter.";
 
     } else if (year == 2024 && category === "Song of the Year") {
         img.src = "grammy_winners/STY_BILLIE.png";
@@ -159,6 +169,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         funfactTEXT = "Chappell Roan was nominated for five other Grammy awards including Best Pop Vocal Album and Album of the Year for 'The Rise And Fall Of A Midwest Princess' in addition to Song Of The Year, Record of the Year, and Best Pop Solo Performance for her hit song 'Good Luck Babe.'";
         nomineeTEXT = ["Benson Boone", "Sabrina Carpenter", "Doechii", "Khruangbin", "Raye", "Shaboozey", "Teddy Swims"];
         POPUP.innerHTML = "This was Chappell Roan's <b>1st</b> grammy";
+        aboutTEXT = "Chappell Roan is an American singer and songwriter who rose to prominence in 2024.";
 
     } else if (year == 2025 && category === "Song of the Year") {
         img.src = "grammy_winners/STY_KENDRICK.png";
@@ -193,6 +204,7 @@ function updateContent() { // updateContent, update image, update audio, update 
     popFact.innerHTML = funfactTEXT;
     otherNoms.innerHTML = formatNomineesAsList(nomineeTEXT);
     // POPUP.innerHTML = popupTEXT;
+    aboutArtist.innerHTML = aboutTEXT;
     
     audio.appendChild(source);
     audio.controls = true;
