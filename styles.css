@@ -30,7 +30,7 @@ h1 {
 }
 
 .carousel {
-  background: white;
+  color: white;
   margin: 20px auto;
   position: relative
 }
@@ -59,7 +59,7 @@ h1 {
   width: 120px;
   height: 60px;
   margin-right: 10px;
-  background: #ddd;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .year-carousel-cell.is-selected {
-  background: #007BFF;
+  background: #be9a47;
   color: white;
   position: relative;
 }
@@ -80,7 +80,7 @@ h1 {
   width: 120px;
   height: 60px;
   margin-right: 10px;
-  background: #ddd;
+ background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +92,7 @@ h1 {
 }
 
 .category-carousel-cell.is-selected {
-  background: #007BFF;
+  background: #e3ba5b;
   color: white;
 }
 
