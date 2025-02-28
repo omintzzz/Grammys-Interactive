@@ -116,6 +116,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["abcdefu (GAYLE)", "About Damn Time (Lizzo)", "All Too Well (Taylor Swift)", "As It Was (Harry Styles)", "Bad Habit (Steve Lacy)", "Break My Soul (Beyoncé)", "Easy On Me (Adele)", "God Did (DJ Khaled Featuring Rick Ross, Lil Wayne, Jay-Z, John Legend & Fridayy)", "The Heart Part 5 (Kendrick Lamar)"];
         POPUP.innerHTML = "This was Bonnie Raitt's <b>13th</b> grammy";
         source.src = "grammy mp3/Bonnie Raitt - Just Like That (Official Lyric Video).mp3";
+        aboutTEXT = "Bonnie Raitt is an American blues singer-songwriter and slide guitar player.";
 
     } else if (year == 2023 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_LIZZO.png";
@@ -124,6 +125,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["Don’t Shut Me Down (ABBA)", "Easy On Me (Adele)", "Break My Soul (Beyoncé)", "Good Morning Gorgeous (Mary J. Blige)", "You And Me On The Rock (Brandi Carlile Featuring Lucius)", "Woman (Doja Cat)", "Bad Habit (Steve Lacy)", "The Heart Part 5 (Kendrick Lamar)", "As It Was (Harry Styles)"];
         POPUP.innerHTML = "This was Lizzo's <b>4th</b> grammy";
         source.src = "grammy mp3/Lizzo - About Damn Time (Lyrics).mp3";
+        aboutTEXT = "Lizzo is an American singer, rapper, and flutist.";
 
     } else if (year == 2023 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_HARRY.png";
@@ -131,6 +133,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         funfactTEXT = "For the 2023 Grammy Awards, Harry Styles' hit song 'As It Was' received four nominations including Record Of The Year, Best Music Video, Best Pop Solo Performance, and Song Of The Year.";
         nomineeTEXT = ["Voyage (ABBA)", "30 (Adele)", "Un Verano Sin Ti (Bad Bunny)", "Renaissance (Beyoncé)", "Good Morning Gorgeous (Deluxe) (Mary J. Blige)", "In These Silent Days (Brandi Carlile)", "Music Of The Spheres (Coldplay)", "Mr. Morale & The Big Steppers (Kendrick Lamar)", "Special (Lizzo)"];
         POPUP.innerHTML = "This was Harry Styles' <b>3rd</b> grammy";
+        aboutTEXT = "Harry Styles is an English singer and songwriter.";
 
     } else if (year == 2024 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_VICTORIA.png";
@@ -147,6 +150,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["A&W (Lana Del Rey)", "Anti-Hero (Taylor Swift)", "Butterfly (Jon Batiste)", "Dance The Night (Dua Lipa)", "Flowers (Miley Cyrus)", "Kill Bill (SZA)", "Vampire (Olivia Rodrigo)"];
         POPUP.innerHTML = "This was Billie Eilish's <b>9th</b> grammy";
         source.src = "grammy mp3/Billie Eilish - What Was I Made For_ (Official Lyric Video).mp3";
+        aboutTEXT = "Billie Eilish is an American singer and songwriter.";
 
     } else if (year == 2024 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_MILEY.png";
@@ -155,6 +159,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["Worship (Jon Batiste)", "Not Strong Enough (boygenius)", "What Was I Made For? (Billie Eilish)", "On My Mama (Victoria Monét)", "Vampire (Olivia Rodrigo)", "Anti-Hero (Taylor Swift)", "Kill Bill (SZA)"];
         POPUP.innerHTML = "This was Miley Cyrus' <b>1st</b> grammy";
         source.src = "grammy mp3/Miley Cyrus - Flowers (Lyrics).mp3";
+        aboutTEXT = "Miley Cyrus is an American singer, songwriter, and actress.";
 
     } else if (year == 2024 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_TAYLOR.png";
@@ -162,6 +167,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         funfactTEXT = "This was the fourth Album of the Year award Taylor Swift has won.";
         nomineeTEXT = ["World Music Radio (Jon Batiste)", "the record (boygenius)", "Endless Summer Vacation (Miley Cyrus)", "Did You Know That There’s A Tunnel Under Ocean Blvd (Lana Del Rey)", "The Age Of Pleasure (Janelle Monáe)", "Guts (Olivia Rodrigo)", "SOS (SZA)"];
         POPUP.innerHTML = "This was Taylor Swift's <b>13th</b> grammy";
+        aboutTEXT = "Taylor Swift is an American singer-songwriter.";
 
     } else if (year == 2025 && category === "Best New Artist") {
         img.src = "grammy_winners/BNA_CHAPPELL.png";
@@ -178,6 +184,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["A Bar Song (Tipsy) (Shaboozey)", "Birds of a Feather (Billie Eilish)", "Die With a Smile (Lady Gaga & Bruno Mars)", "Fortnight (Taylor Swift Featuring Post Malone)", "Good Luck, Babe! (Chappell Roan)", "Please Please Please (Sabrina Carpenter)", "Texas Hold 'Em (Beyoncé)"];
         POPUP.innerHTML = "This was Kendrick Lamar's <b>19th</b> grammy";
         source.src = "grammy mp3/Not Like Us.mp3";
+        aboutTEXT = "Kendrick Lamar is an American rapper and songwriter.";
 
     } else if (year == 2025 && category === "Record of the Year") {
         img.src = "grammy_winners/RTY_KENDRICK.png";
@@ -186,6 +193,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         nomineeTEXT = ["Now and Then (The Beatles)", "Texas Hold 'Em (Beyoncé)", "Espresso (Sabrina Carpenter)", "360 (Charli xcx)", "Birds of a Feather (Billie Eilish)", "Good Luck, Babe! (Chappell Roan)", "Fortnight (Taylor Swift Featuring Post Malone)"];
         POPUP.innerHTML = "This was Kendrick Lamar's <b>18th</b> grammy";
         source.src = "grammy mp3/Not Like Us.mp3";
+        aboutTEXT = "Kendrick Lamar is an American rapper and songwriter.";
 
     } else if (year == 2025 && category === "Album of the Year") {
         img.src = "grammy_winners/AOTY_BEYONCE.png";
@@ -193,6 +201,7 @@ function updateContent() { // updateContent, update image, update audio, update 
         funfactTEXT = "Throughout her extensive music career, Beyonce has finally won Album of the Year after being nominated four times previously. She is the first Black woman in the 21st century to win this award.";
         nomineeTEXT = ["New Blue Sun (André 3000)", "Short n’ Sweet (Sabrina Carpenter)", "Brat (Charli xcx)", "Djesse Vol. 4 (Jacob Collier)", "Hit Me Hard and Soft (Billie Eilish)", "The Rise And Fall Of A Midwest Princess (Chappell Roan)", "The Tortured Poets Department (Taylor Swift)"];
         POPUP.innerHTML = "This was Beyoncé's <b>33rd</b> grammy";
+        aboutTEXT = "Beyoncé is an American singer, songwriter, and actress.";
 
     } else {
         console.warn("No content found for selected year and category.");
