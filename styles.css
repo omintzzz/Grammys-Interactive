@@ -175,14 +175,27 @@ h1 {
 footer {
   background-color: goldenrod;
   position: static;
-  margin-bottom: 0px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  position: relative;
   text-align: center;
-
+  font-size: 16px;  /* Set default font size */
 }
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 15px;  /* Increase padding for tablets */
+    font-size: 14px;  /* Slightly smaller font for tablets */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 12px;  /* Adjust padding for mobile */
+    font-size: 12px;  /* Smaller font size for mobile */
+  }
+}
+
 
 /* Audio Player Styling */
 
@@ -198,4 +211,3 @@ footer {
   max-width: 500px;
   position: relative;
 }
-
