@@ -174,15 +174,17 @@ h1 {
 
 footer {
   background-color: goldenrod;
-  position: static;
-  margin-bottom: 0px;
-  width: 100%;
+  width: 100%; /* Ensure it spans the full width */
   padding: 10px;
   box-sizing: border-box;
-  position: relative;
   text-align: center;
-
+  font-size: 16px;
 }
+
+* {
+  box-sizing: border-box; /* Ensures elements are sized correctly */
+}
+
 
 /* Audio Player Styling */
 
@@ -200,52 +202,38 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  /* Make carousels take up more width */
-  .year-carousel, .category-carousel, .artist-carousel {
-    width: 95%;  /* Allow carousels to use more space */
-    max-width: 100%;
-  }
-
-  /* Adjust the year and category carousel cells */
-  .year-carousel-cell, .category-carousel-cell {
-    width: 100px;  /* Smaller width for smaller screens */
-    height: 50px;
-    font-size: 16px;
-  }
-
-  /* Adjust the artist image size */
-  .artist-img img {
-    width: 100%;  /* Make the image responsive */
-    max-width: 400px; /* Set a max-width */
-    height: auto; /* Keep the aspect ratio */
-  }
-
-  /* Footer: Increase padding for small screens */
-  footer {
-    padding: 20px;
-    font-size: 14px;
-    width: 100%;
-  }
-
-  /* Adjust the main content's padding */
+  /* Main content should still be centered */
   main {
     padding: 10px;
   }
 
-  /* Make headings more compact */
   h1 {
-    font-size: 20px; /* Smaller font for smaller screens */
+    font-size: 20px;
   }
 
-  /* Make the body text size smaller on mobile */
-  body {
+  footer {
+    padding: 15px;
     font-size: 14px;
+  }
+
+  /* Adjust the carousel cells */
+  .year-carousel-cell, .category-carousel-cell {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .artist-img img {
+    max-width: 400px; /* Restrict the image further on small screens */
   }
 }
 
-/* For very small screens like mobile phones */
 @media screen and (max-width: 480px) {
-  /* Make further adjustments for very small screens */
+  /* Further adjust for very small screens */
+  main {
+    padding: 5px;
+  }
+
   h1 {
     font-size: 18px;
   }
@@ -253,16 +241,15 @@ footer {
   footer {
     padding: 10px;
     font-size: 12px;
-    width: 100%;
   }
 
   .year-carousel-cell, .category-carousel-cell {
-    font-size: 14px;
     width: 80px;
     height: 40px;
+    font-size: 14px;
   }
 
   .artist-img img {
-    max-width: 300px; /* Further restrict image width */
+    max-width: 300px; /* Restrict image even more */
   }
 }
