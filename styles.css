@@ -175,27 +175,14 @@ h1 {
 footer {
   background-color: goldenrod;
   position: static;
+  margin-bottom: 0px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  position: relative;
   text-align: center;
-  font-size: 16px;  /* Set default font size */
-}
 
-@media screen and (max-width: 1024px) {
-  footer {
-    padding: 15px;  /* Increase padding for tablets */
-    font-size: 14px;  /* Slightly smaller font for tablets */
-  }
 }
-
-@media screen and (max-width: 600px) {
-  footer {
-    padding: 12px;  /* Adjust padding for mobile */
-    font-size: 12px;  /* Smaller font size for mobile */
-  }
-}
-
 
 /* Audio Player Styling */
 
@@ -210,4 +197,72 @@ footer {
   width: 100%;
   max-width: 500px;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  /* Make carousels take up more width */
+  .year-carousel, .category-carousel, .artist-carousel {
+    width: 95%;  /* Allow carousels to use more space */
+    max-width: 100%;
+  }
+
+  /* Adjust the year and category carousel cells */
+  .year-carousel-cell, .category-carousel-cell {
+    width: 100px;  /* Smaller width for smaller screens */
+    height: 50px;
+    font-size: 16px;
+  }
+
+  /* Adjust the artist image size */
+  .artist-img img {
+    width: 100%;  /* Make the image responsive */
+    max-width: 400px; /* Set a max-width */
+    height: auto; /* Keep the aspect ratio */
+  }
+
+  /* Footer: Increase padding for small screens */
+  footer {
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  /* Adjust the main content's padding */
+  main {
+    padding: 10px;
+  }
+
+  /* Make headings more compact */
+  h1 {
+    font-size: 20px; /* Smaller font for smaller screens */
+  }
+
+  /* Make the body text size smaller on mobile */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* For very small screens like mobile phones */
+@media screen and (max-width: 480px) {
+  /* Make further adjustments for very small screens */
+  h1 {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .year-carousel-cell, .category-carousel-cell {
+    font-size: 14px;
+    width: 80px;
+    height: 40px;
+  }
+
+  .artist-img img {
+    max-width: 300px; /* Further restrict image width */
+  }
 }
